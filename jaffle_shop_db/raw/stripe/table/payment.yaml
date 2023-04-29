@@ -1,0 +1,10 @@
+columns:
+  id: number(10,0) not null
+  orderid: number(10,0) not null
+  paymentmethod: varchar(20)
+  status: varchar(20)
+  amount: number(10,0)
+  created: date
+  _batched_at:
+    type: timestamp_ntz(9)
+    default: current_timestamp

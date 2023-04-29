@@ -1,0 +1,8 @@
+columns:
+  id: number(10,0) not null
+  user_id: number(10,0)
+  order_date: date
+  status: varchar(50)
+  _etl_loaded_at:
+    type: timestamp_ntz(9)
+    default: current_timestamp

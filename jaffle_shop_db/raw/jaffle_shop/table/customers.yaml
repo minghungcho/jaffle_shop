@@ -1,0 +1,6 @@
+columns:
+  id: number(10,0) not null
+  first_name: varchar(45)
+  last_name: varchar(45)
+
+primary_key: [id]
