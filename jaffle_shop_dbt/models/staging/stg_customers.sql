@@ -3,4 +3,4 @@ SELECT
     first_name,
     last_name
 FROM
-    raw.JAFFLE_SHOP.CUSTOMERS
+    {{ source('jaffle_shop', 'customers') }}

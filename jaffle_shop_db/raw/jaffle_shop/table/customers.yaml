@@ -2,5 +2,8 @@ columns:
   id: number(10,0) not null
   first_name: varchar(45)
   last_name: varchar(45)
+  _etl_loaded_at:
+    type: timestamp_ntz(9)
+    default: current_timestamp
 
 primary_key: [id]
