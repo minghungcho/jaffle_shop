@@ -1,4 +1,4 @@
-jaffle_shop_dbt:
+jaffle_shop:
   target: dev
   outputs:
     dev:
@@ -6,6 +6,8 @@ jaffle_shop_dbt:
       account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
       user: "{{ env_var('SNOWFLAKE_USER') }}"
       password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
-      database: demo_db
+      role: accountadmin
       warehouse: compute_wh
+      threads: 4
+      database: demo_db      
       schema: jaffle_shop
