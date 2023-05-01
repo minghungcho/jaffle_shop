@@ -24,7 +24,6 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 on-run-end:
-  - "{{ dbt_project_evaluator.print_dbt_project_evaluator_issues() }}"
   - "{{ dbt_artifacts.upload_results(results) }}"
 
 dispatch:

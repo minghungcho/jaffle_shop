@@ -1,0 +1,19 @@
+version: 2
+
+seeds:
+  - name: country_code
+    description: A mapping of ISO country code
+    columns:
+      - name: name
+        tests:
+          - not_null
+      - name: alpha2
+        tests:
+          - not_null
+      - name: alpha3
+        tests:
+          - not_null
+      - name: country_code
+        tests:
+          - not_null
+          - unique
